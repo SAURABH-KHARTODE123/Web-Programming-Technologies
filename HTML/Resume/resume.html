@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cool Resume Builder</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <div class="resume-builder">
+    <h1>Resume Builder</h1>
+    <div id="result">
+      <p id="name"></p>
+      <p id="position"></p>
+      <p id="contact"></p>
+      <p id="skills"></p>
+      <p id="experience"></p>
+      <p id="education"></p>
+    </div>
+    <form>
+      <input type="text" id="nameInput" placeholder="Name">
+      <input type="text" id="positionInput" placeholder="Position">
+      <input type="text" id="contactInput" placeholder="Contact">
+      <input type="text" id="skillsInput" placeholder="Skills">
+      <input type="text" id="experienceInput" placeholder="Experience">
+      <input type="text" id="educationInput" placeholder="Education">
+      <button type="button" id="submit">Create Resume</button>
+    </form>
+ </div>
+
+ <script>
+    document.getElementById('submit').addEventListener('click', function() {
+      document.getElementById('name').textContent = document.getElementById('nameInput').value;
+      document.getElementById('position').textContent = document.getElementById('positionInput').value;
+      document.getElementById('contact').textContent = document.getElementById('contactInput').value;
+      document.getElementById('skills').textContent = document.getElementById('skillsInput').value;
+      document.getElementById('experience').textContent = document.getElementById('experienceInput').value;
+      document.getElementById('education').textContent = document.getElementById('educationInput').value;
+    });
+ </script>
+</body>
+</html>
