@@ -1,0 +1,67 @@
+1.React-->React is an open-source JavaScript library for building user interfaces or UI components and SPA
+
+2.Advantages of React --->
+	i)Modular Library:Helps to develop lightweight specific application 
+	ii)Asynchronous library:Uses implicitly ajax so without reloading complete page new datails can be added
+	iii)Performance Optimization: React's virtual DOM allows it to efficiently update and render only the parts of the UI that have changed
+	iv)Composable:Allows us to combine parts of elements to form a whole.
+	v)Wrte once use everywhere:We develop new features without writing existing code.
+
+3)Limitations of React-->
+	i)Unstable library
+	ii)Dont have control over the applications
+	iii)Uni-directional Data Flow
+
+4)JSX
+	i)Stands for Javascript xml
+	ii)Allows us to write HTML in react
+	iii)convert HTML tags into react elements
+	iv)Provide ability to create reusable components
+	
+5)Functional component vs Class component
+	i)No render function          | 	Render function present in class component
+	ii)State:Functional components cannot have their own state,| but class components can
+	iii)Functional components are simple JavaScript functions that accept props as input and return JSX as output.
+		 class components are JavaScript classes that extend the React.Component class
+	iv)Stateless  |  Stateful
+	v) Accept only props | Accept both props and State
+
+6)Virtual Dom:The Virtual DOM is a programming concept where "virtual", representation of a UI is kept in memory 
+	and synced with the "real" DOM by a library such as React. 
+	It updates only the changed parts of the actual DOM which leads to efficient and faster operation.
+
+7)React State:In React, state is a special object that allows you to store and manage data in a component. When the state of a component changes,
+	 React will automatically re-render the component and update the UI to reflect the new state.
+	State is Immutable: we cant change state Directly we have to use setState
+eg useState,setState,useEffect,useContext
+
+8)React props
+	This is a object that is passed to a component from its parent component.
+	React props (short for properties) are a way to pass data from one component to another.
+	Props are read-only,
+	props are passed to componenets via html attribute
+
+9)Why should extend react component class?
+ Because it provide us  access to 
+	lifecycle methods 
+	state management,
+	component specific logic,
+	enable modular and reusable code
+
+10)Data Binding	
+	Data binding is a mechanism in which a data model is synchronized with the user interface
+	React uses ONE way Data Binding-->Change in data automatically update UI but not vice versa
+
+11)Library and Framework
+	Framework uses library library not uses framework
+	Libraries are target specific functionality while framework tries to provide everything required 
+to develop Complete Application.
+
+12)Lifecycle of React component:
+	1.Construction -->The constructor is called when a component is first created.
+	2. Initialization -->Before the component is mounted, the static method getDerivedStateFromProps is called.
+	3. Mounting -->When the component is initially rendered, the render method is called.
+  		     This method should return a description of what the component should look like on the screen.
+	4. Updating -->When the component's props or state change, the process of initialization and mounting is repeated
+	5. Unmounting -->When the component is no longer needed, its componentWillUnmount method is called 
+	6. Deletion -->Finally, when the componentWillUnmount method has completed, the component is removed from the DOM and deleted from memory.
